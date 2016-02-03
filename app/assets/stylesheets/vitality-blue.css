@@ -152,6 +152,7 @@ hr.right {
 }
 hr.colored {
   border-color: #0a8fd5;
+
 }
 @media (min-width: 768px) {
   hr {
@@ -693,6 +694,10 @@ aside.cta-quote span.quote {
   }
   .portfolio-carousel .item .project-details {
     padding: 15% 0 0;
+    text-align: center;
+  }
+  .project-details .btn {
+        margin-top: 14px;
   }
   .portfolio-carousel .item .project-details img.client-logo {
     margin: 0 auto 25px 0;
@@ -1160,4 +1165,14 @@ body.vintage .testimonials .testimonials-carousel .item .testimonial-info .testi
 body.vintage .testimonials .testimonials-carousel .owl-controls .owl-prev,
 body.vintage .testimonials .testimonials-carousel .owl-controls .owl-next {
   line-height: 55px;
+}
+@media (min-width: 990px) {
+  .media-media {
+    overflow: hidden;
+    zoom: 1;
+    width: 45%;
+    margin: 0 19px;
+    display: inline-block;
+    height: 255px;
+  }
 }
