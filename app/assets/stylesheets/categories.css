@@ -1,21 +1,18 @@
 /*// Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
-
 .categ-section{
+  text-align: center;
   font-family: Lato, serif, arial;
-  height: 390px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .categ-section .cteg{
-  border-right: 1px solid;
-  border-left: 1px solid;
   text-align: center;
-  padding: 16px 0;
-  height: 370px;
-
+  padding: 10px;
+  height: 325px;
+}
+.categ-section .cteg:nth-child(3){
+  width:100%;
+  margin:0 auto;
 }
 .categ-section .cteg h3{
   color: honeydew;
@@ -30,12 +27,31 @@
   border-radius: 10px;
   margin-bottom:5px;
 }
-.categ-section .cteg p{
-  width:80%;
-  margin:0 auto;
-  color:white;
-}
-.categ-section .cteg:nth-child(2){
-  border-right: none;
-  border-left: none;
+@media (min-width: 992px) {
+  .categ-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .categ-section .cteg{
+    border-right: 1px solid;
+    border-left: 1px solid;
+    text-align: center;
+    padding: 16px 0;
+    height: 370px;
+
+  }
+  .categ-section .cteg p{
+    width:80%;
+    margin:0 auto;
+    color:white;
+  }
+  .categ-section .cteg:nth-child(2){
+    border-right: none;
+    border-left: none;
+  }
+  .categ-section .cteg:nth-child(3){
+    width:323.328px;
+    margin:initial;
+  }
 }

@@ -5,7 +5,7 @@
   <% @categories.in_groups_of(3) do |group| %>
     <div class="row categ-section">
       <% group.each do |category| %>
-          <div class="col-md-4 cteg">
+          <div class="col-sm-6 col-md-4 cteg">
             <h3><%= category.name %></h3>
             <%= link_to image_tag(category.image), category %>
             <p>
