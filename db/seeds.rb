@@ -72,7 +72,7 @@ categories = [
 
 # puts categories[0]
 
-# category = Category.create(categories) #TODO THIS IS ALREADY IN PRODUCTION NO NEED TO SEED IT.
+category = Category.create(categories) #TODO THIS IS ALREADY IN PRODUCTION NO NEED TO SEED IT.
 ## TO DO INSERT ALL PRODUCTS WITH CATEGORY ID STRING - DONE
 # TODO RAKE DB:SEED PRODUCTS
 products = [
