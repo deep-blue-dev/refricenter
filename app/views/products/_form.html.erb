@@ -13,28 +13,32 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <label for="name">Product Name</label><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
+    <label for="description">Description of product</label><br>
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :logo %><br>
+    <label for="logo">Logo link</label><br>
     <%= f.text_field :logo %>
   </div>
   <div class="field">
-    <%= f.label :image %><br>
+    <label for="image">Image Link</label><br>
     <%= f.text_field :image %>
   </div>
+
   <div class="field">
-    <%= f.label :mod_name %><br>
-    <%= f.text_field :mod_name %>
+    <label for="Category">Choose a category for this product</label><br>
+    <%= f.select(:category_id,
+    options_for_select([["Inverter mini-splits", "Inverter mini-splits"], ["Ducted systems", "Ducted systems"],
+    ["LG duty free systems","LG duty free systems"], ["Commercial air conditioners", "Commercial air conditioners"],
+    ["On/off mini-splits", "On/off mini-splits"], ["Refrigeration", "Refrigeration"],
+    ["Room air conditioners, portables and dehumidifiers", "Room air conditioners, portables and dehumidifiers"],
+    ["Fan Coils, universal mounts, and cassettes", "Fan Coils, universal mounts, and cassettes"],
+    ["Compressors", "Compressors"], ["Controls", "Controls"], ["Insulation", "Insulation"],
+    ["Other Products", "Other Products"]])) %>
   </div>
   <div class="actions">
     <%= f.submit %>
