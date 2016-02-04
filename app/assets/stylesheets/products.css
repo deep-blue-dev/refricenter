@@ -1,3 +1,64 @@
 /*// Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+body{
+  background: linear-gradient(to left, #457fca , #5691c8);
+  height:100%;
+}
+
+.show-product{
+  font-weight: 300;
+  margin: 0 3%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.p-back{
+  color:white
+}
+.show-product > div{
+  margin-top: 10em;
+  text-align: center;
+}
+.show-product > div strong{
+  font-weight: 500;
+  color: honeydew;
+  text-transform: uppercase;
+}
+.show-product > div span{
+  font-family: 'Lato', sans-serif;
+  font-size:.85em;
+  color:#fff;
+}
+.p-image {
+  text-align: center;
+}
+.p-image img,.p-logo img{
+  border: 2px solid;
+  border-radius: 45px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .p-image, .p-logo, .p-name {
+    display: inline-block;
+  }
+  .p-logo,.p-name{
+    margin-left: 30px;
+  }
+  .p-desc{
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 980) {
+  .show-product{
+    max-width: 980px;
+    margin:0 auto;
+  }
+}

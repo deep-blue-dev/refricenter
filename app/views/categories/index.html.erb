@@ -1,11 +1,11 @@
 
 
 <!-- <div id="categories" class="transitions-enabled "> -->
-<div id="categories" class="container">
+<div id="categories" class="container transitions-enabled">
   <% @categories.in_groups_of(3) do |group| %>
-    <div class="row">
+    <div class="row categ-section">
       <% group.each do |category| %>
-          <div class="col-md-4">
+          <div class="col-md-4 cteg">
             <h3><%= category.name %></h3>
             <%= link_to image_tag(category.image), category %>
             <p>

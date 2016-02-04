@@ -3,9 +3,8 @@
   <% @products.each do |product| %>
   <div class="media media-media">
     <div class="media-left">
-      <a href="#">
-        <%= image_tag product.image, class: 'media-object' %>
-      </a>
+        <%#= image_tag product.image, class: 'media-object' %>
+      <%= link_to image_tag(product.image, class:"media-object"), product %>
     </div>
     <div class="media-body">
       <h4 class="media-heading"><%= product.name %></h4>

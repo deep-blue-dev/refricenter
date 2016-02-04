@@ -1,32 +1,40 @@
 <p id="notice"><%= notice %></p>
 
 <!-- TODO Show per category products  -->
-
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Logo:</strong>
-  <%= @product.logo %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @product.image %>
-</p>
-
+<div class="show-product">
+  <%= link_to "Back", categories_path(), class: "p-back"%>
+  <div>
+    <div class="p-image">
+      <p>
+        <%= image_tag(@product.image) %>
+      </p>
+    </div>
+    <div class="p-logo">
+      <p>
+        <strong>Logo:</strong>
+        <%= image_tag(@product.logo) %>
+      </p>
+    </div>
+    <div class="p-name">
+      <p>
+        <strong>Name:</strong>
+        <span><%= @product.name %></span>
+      </p>
+    </div>
+    <!-- <div class="p-price">
+      <p>
+        <strong>Price:</strong>
+        <span><%= @product.price %></span>
+      </p>
+    </div> -->
+    <div class="p-desc">
+      <p>
+        <strong>Description:</strong>
+        <span><%= @product.description %></span>
+      </p>
+    </div>
+  </div>
+</div>
 
 
 <%#= link_to 'Edit', edit_product_path(@product) %> |

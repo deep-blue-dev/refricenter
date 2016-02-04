@@ -237,9 +237,9 @@ hr.colored {
   .navbar-inverse .navbar-nav > .active > a:focus {
     border-radius: 5px;
   }
-  .navbar-fixed-top.navbar-expanded {
+  /*.navbar-fixed-top.navbar-expanded {
     padding: 30px 0;
-  }
+  }*/
   .navbar-fixed-top {
     padding: 15px 0;
     -webkit-transition: padding 0.5s;
@@ -251,7 +251,7 @@ hr.colored {
   }
   .navbar-default.navbar-expanded,
   .navbar-inverse.navbar-expanded {
-    background: transparent;
+    background: rgba(0,0,0,0.8);
     border: none;
   }
 }
@@ -712,7 +712,7 @@ aside.cta-quote span.quote {
     line-height: 20px;
   }
   .portfolio-carousel .item hr.colored {
-    margin: 20px auto 20px 0;
+    /*margin: 20px auto 20px 0;*/
   }
 }
 .portfolio-gallery .item {
@@ -1166,6 +1166,7 @@ body.vintage .testimonials .testimonials-carousel .owl-controls .owl-prev,
 body.vintage .testimonials .testimonials-carousel .owl-controls .owl-next {
   line-height: 55px;
 }
+
 @media (min-width: 990px) {
   .media-media {
     overflow: hidden;
