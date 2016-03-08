@@ -20,3 +20,7 @@
  *= require 'masonry/right-to-left'
  *= require 'masonry/transitions'
 */
+
+.top-pad {
+  margin-top: 80px;
+}
